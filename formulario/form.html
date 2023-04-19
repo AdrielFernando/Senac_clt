@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+
+   <div>
+    <h1>Formulário de freelancer</h1>
+    <p>Preencha as informações</p>
+   </div> 
+   
+   <form action="">
+        <fieldset>
+            <div>
+                <label>Nome *</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label>sobrenome *</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div>
+            <label>telefone *</label>
+            <input type="number" name="telefone" id="telefone">
+        </div>
+
+        <div>
+            <label>Email *</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label>mensagem *</label>
+            <textarea rows="6" style="width: 26em" id="mensagem" name="mensagem"></textarea>
+        </div>
+
+        <div>
+            <label>Lingua</label>
+            <select id="lingua">
+                <option>Português (pt-br)</option>
+                <option>inglês</option>
+                <option>espanhol</option>
+                <option>italiano</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Protótipo</label>
+            <br>
+            <label>Requisitos</label>
+            <input type="file">
+        </div>
+
+        <div>
+            <label>Quais linguagens você prefere ?</label>
+            <select required="required" multiple id="linguagen">
+                <option>Java</option>
+                <option>Python</option>
+                <option>C++</option>
+                <option>C</option>
+                <option>JavaScript</option>
+                <option>PHP</option>
+            </select>
+            <label>(Para fazer várias escolhas, mantenha a tecla CTRL pressionada)</label>
+        </div>
+        
+        <div>
+            <label>Banco de Dados</label>
+            <label>
+                <input type="radio" name="banco de dados" value="MySQL">MySQL |
+            </label>  
+
+            <label>
+                <input type="radio" name="banco de dados" value="PostgreSQL">PostgreSQL |
+            </label>
+        
+            <label>
+                <input type="radio" name="banco de dados" value="MongoDB">MongoDB |
+            </label>
+           
+            <label>
+                <input type="radio" name="banco de dados" value="N/A">N/A |
+            </label>
+           
+            <label>
+                <input type="radio" name="banco de dados" value="outro">outro |
+            </label>
+        </div>
+
+        <fieldset>
+            <div>
+                <label>Turno para reuniões *</label>
+                <input type="checkbox" name="manha" value="html">manhã
+                <input type="checkbox" name="tarde" value="html">tarde
+                <input type="checkbox" name="noite" value="html">noite
+            </div>
+        </fieldset>
+
+        <div>
+            <label>Horário Sugerido</label>
+        </div>
+
+        <div>
+            <label>Data Prevista</label>
+            <br>
+            <label>Entrega*</label>
+            <input type="date">
+        </div>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+
+   </form>
+
+</body>
+</html>
