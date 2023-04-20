@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
     <title>formulario</title>
 </head>
 <body>
 
    <div>
-    <h1>Formulário de freelancer</h1>
-    <p>Preencha as informações</p>
+    <h1 id="titulo">Formulário de freelancer</h1>
    </div> 
    
    <form action="">
-        <fieldset>
-            <div>
+        <fieldset class="box">
+            <div class="campo">
                 <label>Nome *</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div>
+            <div class="campo">
                 <label>sobrenome *</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
 
-        <div>
+        <div class="campo">
             <label>telefone *</label>
-            <input type="number" name="telefone" id="telefone">
+            <input type="number" name="telefone" id="telefone" required>
         </div>
 
-        <div>
+        <div class="campo">
             <label>Email *</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
         </div>
 
-        <div>
+        <div class="campo">
             <label>mensagem *</label>
-            <textarea rows="6" style="width: 26em" id="mensagem" name="mensagem"></textarea>
+            <textarea rows="6" style="width: 26em" id="mensagem" name="mensagem" required></textarea>
         </div>
 
-        <div>
+        <div class="campo">
             <label>Lingua</label>
             <select id="lingua">
                 <option>Português (pt-br)</option>
@@ -51,14 +51,14 @@
             </select>
         </div>
 
-        <div>
+        <div class="campo">
             <label>Protótipo</label>
             <br>
             <label>Requisitos</label>
             <input type="file">
         </div>
 
-        <div>
+        <div class="campo">
             <label>Quais linguagens você prefere ?</label>
             <select required="required" multiple id="linguagen">
                 <option>Java</option>
@@ -71,30 +71,30 @@
             <label>(Para fazer várias escolhas, mantenha a tecla CTRL pressionada)</label>
         </div>
         
-        <div>
-            <label>Banco de Dados</label>
+        <div class="campo">
+            <label>Banco de Dados :</label>
             <label>
-                <input type="radio" name="banco de dados" value="MySQL">MySQL |
+                <input type="radio" name="banco de dados" value="MySQL">MySQL
             </label>  
 
             <label>
-                <input type="radio" name="banco de dados" value="PostgreSQL">PostgreSQL |
+                <input type="radio" name="banco de dados" value="PostgreSQL">PostgreSQL
             </label>
         
             <label>
-                <input type="radio" name="banco de dados" value="MongoDB">MongoDB |
+                <input type="radio" name="banco de dados" value="MongoDB">MongoDB
             </label>
            
             <label>
-                <input type="radio" name="banco de dados" value="N/A">N/A |
+                <input type="radio" name="banco de dados" value="N/A">N/A
             </label>
            
             <label>
-                <input type="radio" name="banco de dados" value="outro">outro |
+                <input type="radio" name="banco de dados" value="outro">outro
             </label>
         </div>
 
-        <fieldset>
+        <fieldset class="grupo">
             <div>
                 <label>Turno para reuniões *</label>
                 <input type="checkbox" name="manha" value="html">manhã
@@ -103,19 +103,19 @@
             </div>
         </fieldset>
 
-        <div>
+        <div class="campo">
             <label>Horário Sugerido</label>
+            <input type="time">
         </div>
 
-        <div>
+        <div class="campo">
             <label>Data Prevista</label>
-            <br>
             <label>Entrega*</label>
             <input type="date">
         </div>
 
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
+        <button class="button" type="reset">Limpar</button>
+        <button class="button" type="submit">Enviar</button>
 
    </form>
 
